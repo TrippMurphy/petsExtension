@@ -9,6 +9,10 @@ class commandLine{
     });
   }
 }
+
+//functionality:
+//listen for an enter in our input tag, then store the input
+
 // class commandLine{
 //     constructor(){
 //         this.userCommand = document.getElementById('newCommand');

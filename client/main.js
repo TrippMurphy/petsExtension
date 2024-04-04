@@ -2,7 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
 //     // const title = document.createElement('');
 //     // title.innerText = 'Online Chatroom';
 //     // document.querySelector('body').appendChild(title);
-    let commandLine = new commandLine;
+  const grass = document.querySelector('.grass');
+  const commandLine = new commandLine;
+  if(commandLine.input !== null){
+    console.log('main.js');
+  }
     
 });
 //functionality:
