@@ -8,15 +8,22 @@
 </head>
 <body>
     <div class="dropdown-main">
-        <h1>Add your pet below!</h1>
+        <h1>Add your pet to play in the grass field below!</h1>
 
         <div class="grass"></div>
-        
+
+      <div class = "button-input-container"> 
+
         <form class="commandLine" method="POST" >
-            <label for="commandLine">Type Command: Hit Enter</label>
-            <input id="newCommand" type="text"/>
+            <!-- <label for="commandLine">Type Command: Hit Enter</label> -->
+            <input id="newCommand" type="text" placeholder = "Enter command and input value"/>
         </form>
+
+        <button type="button">Feed</button>
+        <button type="button">Play catch</button>
+
+      </div>
     </div>
 </body>
 <script src='./client/main.js'></script>
-</html>
+</html> 

@@ -2,18 +2,61 @@
   .commandLine{
     text-align: center;
   }
-  .newCommand{
+  #newCommand{
     padding:14px;
     outline: none;
     border: transparent;
     border-radius: 35px;
-    width: 37.5%;
+    width: 50%;
     background-color: rgb(237,239, 246);
+    margin-bottom: 10px; 
+    margin-left: 20px; 
   }
-h1{
-    color: blue;
+
+body{
+  background: none;
 }
 
+.dropdown-main{
+  background-image: url("assets/images/clouds.jpg");
+  background-color: rgb(193, 204, 255);
+}
+
+h1{
+  color : rgb(0, 24, 35);
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  text-align: center;
+  font-family: papyrus, sans-serif;
+  font-size: 20px;
+}
+
+.grass{
+  background-image: url("assets/images/grass.jpg");
+  background-color: green;
+  height: 400px;
+  width: 400px;
+  margin: 20px; 
+  margin-top: 20px; 
+  margin-right: 20px; 
+  margin-bottom: 20px; 
+  margin-left: 20px;
+}
+
+.button{
+    padding:14px;
+    outline: none;
+    border: transparent;
+    border-radius: 35px;
+    width: 50%;
+    background-color: rgb(237,239, 246);
+    margin-bottom: 10px; 
+    margin-left: 20px; 
+}
+
+.button-input-container {
+  display: inline;
+}
 
 
 
