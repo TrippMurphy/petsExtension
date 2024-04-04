@@ -1,12 +1,17 @@
 {
-    "manifest_version": 2, 
-    "name": "My Pets Extension",
-    "version": "1.0",
-    "description": "Take a break from the day and play with your favorite Codesmith pets!",
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "js": ["./client/main.js"]
-        }
-    ]
+  "manifest_version": 2, 
+  "name": "My Pets Extension",
+  "version": "1.0",
+  "description": "Take a break from the day and play with your favorite Codesmith pets!",
+  "browser_action":{
+    "default_icon": "assets/images/ryan.png",
+    "default_popup": "index.html",
+    "default_title": "My Pets Extension"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./client/main.js"]
+    }  
+  ]
 }
