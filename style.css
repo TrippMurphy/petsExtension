@@ -9,8 +9,7 @@
     border-radius: 35px;
     width: 50%;
     background-color: rgb(237,239, 246);
-    margin-bottom: 10px; 
-    /* margin-left: 20px;  */
+    /* margin-bottom: 8px;  */
   }
 
 body{
@@ -31,6 +30,14 @@ h1{
   font-size: 20px;
 }
 
+h3{
+  color : rgb(0, 0, 0);
+  padding-bottom: 15px;
+  text-align: center;
+  font-family: papyrus, sans-serif;
+  font-size: 15px;
+}
+
 .grass{
   background-image: url("assets/images/grass.jpg");
   background-color: green;
@@ -43,7 +50,51 @@ h1{
   margin-left: 20px;
 }
 
-.button{
+table {
+  /* border-collapse: collapse; */
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(241, 223, 232);
+  border-radius: 10px;
+  table-layout: fixed;
+  width: 80%;
+  /* padding-bottom: 10px; */
+  /* caption-side: top; */
+}
+caption {
+  display: table-caption;
+  text-align: center;
+  font-family: papyrus, sans-serif;
+
+  margin-bottom: 2px;
+  font-size: 16px;
+}
+
+tbody {
+  padding-bottom: 50px;
+
+}
+
+td { 
+  /* border: 1px solid black; */
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* padding: 10px; */
+}
+
+.func-title {
+  font-weight: bold;
+}
+
+.finalcontent{
+  padding-bottom: 50px;
+
+}
+
+/* .button{
     padding:14px;
     outline: none;
     border: transparent;
@@ -56,4 +107,80 @@ h1{
 
 .button-container {
   display: inline;
+
+} */
+
+
+
+/* body { 
+    background-color: white;
 }
+
+header{
+    position: relative;
+    text-align: right;
+}
+
+/* Dropdown Button */
+/* .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50%;
+  } */
+  
+  /* The container <div> - needed to position the dropdown content */
+  /* .dropdown {
+    position: relative;
+    display: inline-block;
+
+  } */
+  
+  /* Dropdown Content (Hidden by Default) */
+  /* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  } */
+  
+  /* Links inside the dropdown */
+  /* .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  } */
+  
+  /* Change color of dropdown links on hover */
+  /* .dropdown-content a:hover {background-color: #ddd;} */
+  
+  /* Show the dropdown menu on hover */
+  /* .dropdown:hover .dropdown-content {display: block;} */
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  /* .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+  #logo{
+    text-align: center;
+    margin-top: 4.9%;
+    padding-bottom: 38px;
+  } */
+
+  /* Search Bar */
+  /* #searchbarContainter{
+    text-align: center;
+  }
+  #searchbar{
+    padding:14px;
+    outline: none;
+    border: transparent;
+    border-radius: 35px;
+    width: 37.5%;
+    background-color: rgb(237,239, 246);
+  } */

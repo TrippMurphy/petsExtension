@@ -12,17 +12,36 @@
 
         <div class="grass"></div>
 
-      <div class = "button-container"> 
-
         <form class="commandLine" method="POST" >
             <!-- <label for="commandLine">Type Command: Hit Enter</label> -->
             <input id="newCommand" type="text" placeholder = "Enter command and input value"/>
         </form>
 
-        <button type="button">Feed</button>
-        <button type="button">Play catch</button>
+        <table>
+          <caption>Commands</caption>
+          <thead></thead>
+          <tbody>
+            <tr>
+              <td class="func-title">add(yourName)</td>
+              <td class="func-title">feed()</td>
+            </tr>
+            <tr>
+              <td>Add your pet with your name as the input value.</td>
+              <td>Feed all active pets.</td>
+            </tr>
+            <tr>
+              <td class="func-title">move()</td>
+              <td class="func-title">party()</td>
+            </tr>
+            <tr class="finalcontent">
+              <td>Get all active pets moving.</td>
+              <td>Start a party with all active pets!</td>
+            </tr>
+          </tbody>
+        </table>
 
-      </div>
+        <h3> </h3>
+
     </div>
 </body>
 <script src='./client/main.js'></script>

@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     else if(input[0] === 'feed') feed(head);
     else if(input[0] === 'move') move(head);
     else if(input[0] === 'party') party(head);
+    else if(input[0] === 'congaLine') congaLine(head);
 
     userCommand.value = '';
   });
@@ -53,7 +54,7 @@ function move(head, speed = 5){
 
   let cache = head;
   let i = 2;
-  console.log(width, height);
+  // console.log(width, height);
   while(cache.next !== null){
     const newX = Math.random() * (400 - cache.size * i);
     // - (cache.size * i);
@@ -62,7 +63,7 @@ function move(head, speed = 5){
     // const newX = Math.random() * (width - cache.size);
     // const newY = Math.random() * (height - cache.size);
 
-    console.log('x', newX, ' y', newY);
+    // console.log('x', newX, ' y', newY);
     cache.petIMG.style.transition = `transform ${speed}s linear`;
     cache.petIMG.style.transform = `translate(${newX}px, ${newY}px)`;
     cache = cache.next;
@@ -77,18 +78,67 @@ function party(head){
   for(let i = 0; i < allPets.length; i++){
     head = add(allPets[i], head);
   }
-  console.log('running', head);
+  // console.log('running', head);
   // return 
   move(head, 2);
 
 }
 function congaLine(head){
-  let cache = head;
-  let pastLeftPosition;
-  let pastTopPosition;
-  while(cache !== null){
+  // let cache = head;
+  //store heads position
+  // let storedPos1 = head.split(JSON.stringify(cache.petIMG.style.transform));
+
+  //move head
+    
+  //go to next node
+  // store next nodes position
+  //move next node to stored heads position
+  //go to next node
+  //store next nodes position
+  //move next node
+
+
+  // console.log(JSON.stringify(cache.petIMG.style.transform));
+  // let cache = head;
+  // let pastLeftPosition;
+  // let pastTopPosition;
+  // while(cache !== null){
      
-  }
+  // }
+
+  // let cache = head;
+  // let x = 250;
+  // let y = 250;
+  // let i = 0;
+  // console.log('parseInt, ', parseInt(cache.petIMG.style.transform.match(/translateX\((.*?)px\)/)[0]));
+  // //.match(/translateX\((.*?)px\)/)[1]
+  // // // Calculate the position of the head pet
+  // while (cache.next !== null) {
+  //   x += parseInt(cache.petIMG.style.transform);
+  //   y += parseInt(cache.petIMG.style.transform);
+  //   i++;
+  //   cache = cache.next;
+  // }
+  // x = y / i;
+  // y = y / i;
+
+  // // Move all pets to the calculated position
+  // cache = head;
+  
+  // while (cache.next !== null) {
+  //   // cache.p
+  //   // cache.petIMG.style.transition = 'transform 1s linear'; // Adjust the animation duration if needed
+  //   cache.petIMG.style.transform = `translate(${x}px, ${y}px)`;
+  //   cache = cache.next;
+  // }
+  // return;
+
+  //on arrow key press(not backwards)
+  //cache head
+  //current position = cache x, y
+  //move cache in arrow direction
+  //move cache down the line
+}
   // bodyMove(topPosition, leftPosition){
   //   let index = this.next;
   //   let pastTopPosition;
@@ -108,7 +158,7 @@ function congaLine(head){
   //     index = index.next;
   //   }
   // }
-}
+// }
 
 //functionality:
 //creates and utilizes each object instance
